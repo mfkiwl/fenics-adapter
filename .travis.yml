@@ -6,4 +6,4 @@ matrix:
     env: PY=python3
     script:
     - curl -LO --retry 3 https://raw.githubusercontent.com/precice/systemtests/EderK-fix-push_args/trigger_systemtests.py
-    - $PY trigger_systemtests.py --adapter fenics --wait --systest EderK-fix-push_args
+    - travis_wait 60 $PY trigger_systemtests.py --adapter fenics --wait --systest EderK-fix-push_args
