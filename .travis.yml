@@ -7,4 +7,4 @@ matrix:
     script:
     - curl -LO --retry 3 https://raw.githubusercontent.com/precice/systemtests/EderK-fix-push_args/trigger_systemtests.py
     - travis_wait 60 $PY trigger_systemtests.py --adapter fenics --wait --systest EderK-fix-push_args
-    - echo -e "[[RUNNING ON COMMIT]]\n$TRAVIS_COMMIT_MESSAGE\n[[COMMIT END]]"
+    - echo -e "[[RUNNING on COMMIT]]\n$TRAVIS_COMMIT_MESSAGE\n[[COMMIT END]]"
